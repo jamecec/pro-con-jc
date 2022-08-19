@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+html{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  --neutralColor: #a7a6a4;
+  --accentColor: #c8d6d5;
+  background-color:  var(--accentColor);
+}
+h1{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+h2, h3{
+  text-align: center;
+  text-decoration: underline;
+}
+textarea{
+  width: 100%;
+  height: 70px;
+  background-color: var(--accentColor);
+  border: none;
+}
+input{
+  margin-bottom: 1rem;
+}
+.selections{
+  padding: 1px 0 10px 0;
+  background-color: var(--neutralColor);
+}
+  .listSelection, .side{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+    .listSelection button, select{
+      margin: 0 2rem;
+      padding: 0px 15px;
+      background-color: var(--accentColor);
+      border-radius: 5px;
+      border: none;
+      font-family: 'Indie Flower', cursive;
+      font-size: 1rem;
+      cursor: pointer
+    }
+.listModal, .arguments{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+  .arguments button{
+      padding: 5px 15px;
+      background-color: var(--neutralColor);
+      border-radius: 5px;
+      align-self: center;
+      border: none;
+      font-family: 'Indie Flower', cursive;
+      font-size: 1rem;
+      cursor: pointer
+    }
+.importance{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+}
+.weightBtn{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+
+}
+.list{
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+.score{
+  font-size: 1.5rem;
+  padding: 5px;
+  border: 5px double black;
+  margin-top: auto;
+}
+.listDisplay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.winner{
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 0 10px;
+    border: 3px dotted black;
+  }
+ul{
+  margin: 0 10px 30px 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 40em){
+  .listSelection{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .columns{
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
